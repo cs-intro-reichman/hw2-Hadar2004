@@ -19,16 +19,16 @@ public class Cheers {
         char current_char = word.charAt(i);
         
         if (AN_LETTERS.indexOf(current_char) != -1) {
-        System.out.println("Give me an " + current_char + ": " + current_char +"!");
+       System.out.println("Give me an " + current_char + ": " + current_char + "!");
         }
         else {
-        System.out.println("Give me a " + current_char + ": " + current_char + "!");        
+        System.out.println("Give me a  " + current_char + ": " + current_char + "!");        
         }
         
         
         }
         System.out.println("What does that spell?"); 
-        
+
          for (int x = 0; x < value; x++) {
          System.out.println(word + "!!!");  
         }
