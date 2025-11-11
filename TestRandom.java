@@ -2,13 +2,33 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	int n = Integer.parseInt(args[0]);
-	for(int i = 0; i >= n; i++) {
-		System.out.println(n);
-		if (n>0.5) {
-		
-		}
-		
+	
+	int lessThanOrEqualHalf = 0;
+	int greaterThanHalf = 0;
+
+	
+	for(int i = 0; i < n; i++) {
+	double randomValue = Math.random(); 
+	if (randomValue > 0.5) {
+	greaterThanHalf++; 	
+	}
+	else {
+	lessThanOrEqualHalf++;	
+	}
 	}    
+
+	System.out.println("> 0.5:  " + greaterThanHalf + " times");
+	System.out.println("<= 0.5: " + lessThanOrEqualHalf + " times");
+    
+
+	if (lessThanOrEqualHalf == 0) {
+	 	
+	}
+	else {
+    double ratio = (double) greaterThanHalf / lessThanOrEqualHalf;
+	System.out.println("Ratio:  " + ratio);
+	}
+ 
+    
 	}
 }
-//להשתמש בfor 
