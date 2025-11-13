@@ -8,7 +8,7 @@ public class Collatz {
 	int count;
 
 	for (int seed = 1; seed <= maxSeed; seed++) {
-	 if (verbose && seed ==1) {
+	 if (verbose && seed == 1) {
 	 System.out.println("1 4 2 1 (4)");	
 	 continue; 
 	 }
@@ -30,7 +30,7 @@ public class Collatz {
 	 }
 
 	 if (verbose) {
-	 System.out.println(sequence + " (" + count + ") ");	 
+	 System.out.println(sequence + " (" + count + ")");	 
 	 }
 	
 	}
